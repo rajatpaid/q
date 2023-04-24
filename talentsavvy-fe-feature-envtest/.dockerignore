@@ -1,0 +1,14 @@
+**node_modules**
+.git
+*.md
+.gitignore
+**__test__**
+**helmcharts**
+README.md
+get_helm.sh
+sonar-project.properties
+.prettierignore
+.prettierrc
+.gitignore
+Dockerfile
+node_modules

@@ -1,0 +1,5 @@
+backendmap:
+ - name: "service_url"
+   value: "talentsavvy-be.talentsavvy-dev.svc.cluster.local"
+ - name: "service_port"
+   value: "8080"
