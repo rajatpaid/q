@@ -19,7 +19,8 @@ spec:
         {{- toYaml . | nindent 8 }}
       {{- end }}
       labels:
-        app: {{ .Values.service_name }}
+        app: talentsavvy-fe
+        #app: {{ .Values.service_name }}
     spec:
       imagePullSecrets:
         - name: {{ .Values.imagePullSecrets }}
@@ -39,7 +40,8 @@ spec:
             {{- end }} 
           ports:
             - name: http
-              containerPort: {{ .Values.service.targetPort }}
+              containerPort: 80
+              #containerPort: {{ .Values.service.targetPort }}
               protocol: TCP
           
           resources:
