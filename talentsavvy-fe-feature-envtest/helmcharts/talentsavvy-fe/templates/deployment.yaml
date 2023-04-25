@@ -10,8 +10,7 @@ spec:
   {{- end }}
   selector:
     matchLabels:
-      app: talentsavvy-fe
-      #app: {{ .Values.service_name }}
+      app: {{ .Values.service_name }}
   template:
     metadata:
       {{- with .Values.podAnnotations }}
@@ -19,8 +18,8 @@ spec:
         {{- toYaml . | nindent 8 }}
       {{- end }}
       labels:
-        app: talentsavvy-fe
-        #app: {{ .Values.service_name }}
+        
+        app: {{ .Values.service_name }}
     spec:
       imagePullSecrets:
         - name: {{ .Values.imagePullSecrets }}
@@ -40,8 +39,8 @@ spec:
             {{- end }} 
           ports:
             - name: http
-              containerPort: 80
-              #containerPort: {{ .Values.service.targetPort }}
+              
+              containerPort: {{ .Values.service.targetPort }}
               protocol: TCP
           
           resources:
