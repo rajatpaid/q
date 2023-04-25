@@ -10,7 +10,8 @@ spec:
   {{- end }}
   selector:
     matchLabels:
-      app: {{ .Values.service_name }}
+      app: talentsavvy-fe
+      #app: {{ .Values.service_name }}
   template:
     metadata:
       {{- with .Values.podAnnotations }}
