@@ -16,4 +16,5 @@ spec:
       protocol: TCP
       name: https
   selector:
+    app: talentsavvy-fe
     app: {{ .Values.service_name }}	
