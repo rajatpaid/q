@@ -16,5 +16,4 @@ spec:
       protocol: TCP
       name: https
   selector:
-    app: {{- .Values.service_name }}
-    
+    app: {{ .Values.service_name }}
