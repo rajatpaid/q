@@ -46,7 +46,7 @@ spec:
           volumeMounts:
           - name: secrets-store01-inline
             mountPath: "/mnt/secrets-store"
-            readOnly: true
+            readOnlyMany: true
       volumes:
         - name: secrets-store01-inline
           csi:
