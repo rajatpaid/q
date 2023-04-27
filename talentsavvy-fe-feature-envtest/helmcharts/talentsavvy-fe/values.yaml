@@ -8,7 +8,7 @@ service_name : "talentsavvy-fe"
 image:
   repository: talentsavvyargoregistry.azurecr.io/talentsavvy-fe
   #repository: acrdevtempaks.azurecr.io/talentsavvy-fe
-  pullPolicy: IfNotPresent
+  pullPolicy: Always
   # Overrides the image tag whose default is the chart appVersion.
   tag: "1.0"
 
