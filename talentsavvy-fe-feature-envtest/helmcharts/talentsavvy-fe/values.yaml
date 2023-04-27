@@ -11,11 +11,11 @@ image:
   # Overrides the image tag whose default is the chart appVersion.
   tag: ""
 
-image:
-  repository: ""
-  pullPolicy: ""
-  # Overrides the image tag whose default is the chart appVersion.
-  tag: ""
+# image:
+#   repository: ""
+#   pullPolicy: ""
+#   # Overrides the image tag whose default is the chart appVersion.
+#   tag: ""
 
 imagePullSecrets: acr-cred:wq
 nameOverride: ""
