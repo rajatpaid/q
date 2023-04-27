@@ -1,9 +1,9 @@
 name: talentsavvy-fe CI and CD
 on:
   push:
-   branches: [ "main","feature/*" ]
+   branches: [ "main" ]
   pull_request:
-   branches: [ "develop","main" ]
+   branches: [ "main" ]
 env:
   ACR_REGISTRY: ${{ secrets.REGISTRY_LOGIN_SERVER}}
   IMAGE_NAME: talentsavvy-fe
