@@ -6,7 +6,8 @@ replicaCount: 1
 namespace : talentsavvy-dev
 service_name : "talentsavvy-fe"
 image:
-  repository: acrdevtempaks.azurecr.io/talentsavvy-fe
+  repository: talentsavvyargoregistry.azurecr.io/talentsavvy-fe
+  #repository: acrdevtempaks.azurecr.io/talentsavvy-fe
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
   tag: ""
